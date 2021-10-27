@@ -1,0 +1,11 @@
+type Client{
+    id: ID!
+    firstName: String
+    lastName: String
+    middleName: String
+    birthday: String
+}
+extend type Query {
+    client(id: ID): Client
+
+}

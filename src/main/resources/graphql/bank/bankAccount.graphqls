@@ -2,6 +2,7 @@ type BankAccount {
     id: ID!
     currency: Currency
     name:String
+    client: Client
 
 }
 extend type Query {
