@@ -12,6 +12,6 @@ graphql:
       - name: Bank account sample query
         query: classpath:playground/bank_account.graphql
         variables: classpath:playground/bank_account_variables.json
-      - name: Bank account sample query1
-        query: classpath:playground/bank_account.graphql
-        variables: classpath:playground/bank_account_variables.json
+#      - name: Bank account sample query1
+#        query: classpath:playground/bank_account.graphql
+#        variables: classpath:playground/bank_account_variables.json
