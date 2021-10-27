@@ -1,0 +1,9 @@
+type DepositAccount {
+    id: ID!
+    name:String
+
+}
+extend type Query {
+    depositAccount(id: ID): DepositAccount
+
+}

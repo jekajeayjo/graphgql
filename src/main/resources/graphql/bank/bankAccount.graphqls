@@ -1,0 +1,10 @@
+type BankAccount {
+    id: ID!
+    currency: Currency
+    name:String
+
+}
+extend type Query {
+    bankAccount(id: ID): BankAccount
+
+}
