@@ -9,6 +9,7 @@ public class BankAccount {
     private Long id;
     private Currency currency;
     private String name;
+    private Client client;
 
     public Long getId() {
         return id;
@@ -32,5 +33,13 @@ public class BankAccount {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 }

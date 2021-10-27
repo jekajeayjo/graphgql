@@ -1,0 +1,17 @@
+graphql:
+  servlet:
+    maxQueryDepth: 100
+    exception-handlers-enabled: true
+    tracingEnabled: false
+  playground:
+    headers:
+      Authorization: Bearer TOKEN
+      user_id: IDP|Philip
+      user_roles: get:bank_account
+    tabs:
+      - name: Bank account sample query
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
+      - name: Bank account sample query1
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
