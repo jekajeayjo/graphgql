@@ -1,11 +1,13 @@
 package md.graphql.resolver;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+//import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import md.graphql.bank.BankAccount;
 import md.graphql.bank.Client;
 import md.graphql.bank.Currency;
 import md.graphql.bank.DepositAccount;
 import md.graphql.dto.BankAccountDto;
+//import org.checkerframework.checker.units.qual.C;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -26,6 +28,6 @@ public class BankAccountResolver implements GraphQLQueryResolver {
     }
     public Client client(Long id)
     {
-        return null;
+        return new Client();
     }
 }
